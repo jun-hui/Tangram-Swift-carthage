@@ -57,7 +57,7 @@ To See detailed performance of interal layouts , [Click me](https://github.com/a
 Use Cocoapods to Get latest version of Tangram
 
 ```
-pod 'Tangram'
+pod 'Tangram-iOS-carthage'
 ```
 
 
