@@ -1,0 +1,10 @@
+{
+  "commitish" : "c0550fca08796d60b5782e2308798d51ed6b8c88",
+  "iOS" : [
+    {
+      "name" : "Moya",
+      "hash" : "073a476ceefe6c5931481e12874d011df739d0eaaaa5f9fd20087394bc0bf337",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

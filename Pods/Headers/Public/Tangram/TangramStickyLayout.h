@@ -1,1 +1,0 @@
-../../../Tangram/Tangram/Layouts/TangramStickyLayout.h

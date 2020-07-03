@@ -1,0 +1,1279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D0F40FE24AF0FCF005D00C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F40FD24AF0FCF005D00C3 /* AppDelegate.swift */; };
+		4D0F410724AF0FD0005D00C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F410624AF0FD0005D00C3 /* Assets.xcassets */; };
+		4D0F410A24AF0FD0005D00C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F410824AF0FD0005D00C3 /* LaunchScreen.storyboard */; };
+		4D0F420724AF0FE2005D00C3 /* DTKBridgeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F411224AF0FE1005D00C3 /* DTKBridgeSwift.swift */; };
+		4D0F420824AF0FE2005D00C3 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F411424AF0FE1005D00C3 /* MockViewController.swift */; };
+		4D0F420924AF0FE2005D00C3 /* EntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F411524AF0FE1005D00C3 /* EntryTableViewController.swift */; };
+		4D0F420A24AF0FE2005D00C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F411624AF0FE1005D00C3 /* ViewController.swift */; };
+		4D0F420B24AF0FE2005D00C3 /* TangramMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F411724AF0FE1005D00C3 /* TangramMock.json */; };
+		4D0F420C24AF0FE2005D00C3 /* VVPropertySetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F412024AF0FE1005D00C3 /* VVPropertySetter.m */; };
+		4D0F420D24AF0FE2005D00C3 /* VVPropertyStringSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F412124AF0FE1005D00C3 /* VVPropertyStringSetter.m */; };
+		4D0F420E24AF0FE2005D00C3 /* VVPropertyFloatSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F412224AF0FE1005D00C3 /* VVPropertyFloatSetter.m */; };
+		4D0F420F24AF0FE2005D00C3 /* VVPropertyExpressionSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F412624AF0FE1005D00C3 /* VVPropertyExpressionSetter.m */; };
+		4D0F421024AF0FE2005D00C3 /* VVExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F412724AF0FE1005D00C3 /* VVExpression.m */; };
+		4D0F421124AF0FE2005D00C3 /* VVPropertyIntSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F412824AF0FE1005D00C3 /* VVPropertyIntSetter.m */; };
+		4D0F421224AF0FE2005D00C3 /* VVNodeCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F412924AF0FE1005D00C3 /* VVNodeCreater.m */; };
+		4D0F421324AF0FE2005D00C3 /* VVConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F412F24AF0FE1005D00C3 /* VVConfig.m */; };
+		4D0F421424AF0FE2005D00C3 /* VVBinaryStringMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F413124AF0FE1005D00C3 /* VVBinaryStringMapper.m */; };
+		4D0F421524AF0FE2005D00C3 /* VVErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F413324AF0FE1005D00C3 /* VVErrors.m */; };
+		4D0F421624AF0FE2005D00C3 /* VVViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F413424AF0FE1005D00C3 /* VVViewContainer.m */; };
+		4D0F421724AF0FE2005D00C3 /* VVBaseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F413624AF0FE1005D00C3 /* VVBaseNode.m */; };
+		4D0F421824AF0FE2005D00C3 /* VVNodeClassMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F413724AF0FE1005D00C3 /* VVNodeClassMapper.m */; };
+		4D0F421924AF0FE2005D00C3 /* VVSystemKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F413924AF0FE1005D00C3 /* VVSystemKey.m */; };
+		4D0F421A24AF0FE2005D00C3 /* VVObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F413C24AF0FE1005D00C3 /* VVObserver.m */; };
+		4D0F421B24AF0FE2005D00C3 /* NSObject+VVObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F413F24AF0FE1005D00C3 /* NSObject+VVObserver.m */; };
+		4D0F421C24AF0FE2005D00C3 /* UIView+VirtualView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F414124AF0FE1005D00C3 /* UIView+VirtualView.m */; };
+		4D0F421D24AF0FE2005D00C3 /* UIColor+VirtualView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F414424AF0FE1005D00C3 /* UIColor+VirtualView.m */; };
+		4D0F421E24AF0FE2005D00C3 /* VVTemplateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F414724AF0FE1005D00C3 /* VVTemplateManager.m */; };
+		4D0F421F24AF0FE2005D00C3 /* VVVersionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F414924AF0FE1005D00C3 /* VVVersionModel.m */; };
+		4D0F422024AF0FE2005D00C3 /* VVViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F414A24AF0FE1005D00C3 /* VVViewFactory.m */; };
+		4D0F422124AF0FE2005D00C3 /* VVTemplateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F414B24AF0FE1005D00C3 /* VVTemplateLoader.m */; };
+		4D0F422224AF0FE2005D00C3 /* VVBinaryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F414C24AF0FE1005D00C3 /* VVBinaryLoader.m */; };
+		4D0F422324AF0FE2005D00C3 /* VVTemplateBinaryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F414E24AF0FE1005D00C3 /* VVTemplateBinaryLoader.m */; };
+		4D0F422424AF0FE2005D00C3 /* NVImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F415424AF0FE1005D00C3 /* NVImageView.m */; };
+		4D0F422524AF0FE2005D00C3 /* NVTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F415524AF0FE1005D00C3 /* NVTextView.m */; };
+		4D0F422624AF0FE2005D00C3 /* NVLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F415624AF0FE1005D00C3 /* NVLineView.m */; };
+		4D0F422724AF0FE2005D00C3 /* VVGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F415E24AF0FE1005D00C3 /* VVGridView.m */; };
+		4D0F422824AF0FE2005D00C3 /* VVLoopingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F415F24AF0FE1005D00C3 /* VVLoopingScrollView.m */; };
+		4D0F422924AF0FE2005D00C3 /* VVPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F416024AF0FE1005D00C3 /* VVPageView.m */; };
+		4D0F422A24AF0FE2005D00C3 /* NVVH2Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F416224AF0FE1005D00C3 /* NVVH2Layout.m */; };
+		4D0F422B24AF0FE2005D00C3 /* VVFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F416524AF0FE1005D00C3 /* VVFrameLayout.m */; };
+		4D0F422C24AF0FE2005D00C3 /* NVRatioLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F416624AF0FE1005D00C3 /* NVRatioLayout.m */; };
+		4D0F422D24AF0FE2005D00C3 /* VVVHLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F416A24AF0FE1005D00C3 /* VVVHLayout.m */; };
+		4D0F422E24AF0FE2005D00C3 /* NVFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F416B24AF0FE1005D00C3 /* NVFrameLayout.m */; };
+		4D0F422F24AF0FE2005D00C3 /* VVRatioLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F416C24AF0FE1005D00C3 /* VVRatioLayout.m */; };
+		4D0F423024AF0FE2005D00C3 /* VVLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F416D24AF0FE1005D00C3 /* VVLayout.m */; };
+		4D0F423124AF0FE2005D00C3 /* NVVHLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F417124AF0FE1005D00C3 /* NVVHLayout.m */; };
+		4D0F423224AF0FE2005D00C3 /* NVGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F417224AF0FE1005D00C3 /* NVGridLayout.m */; };
+		4D0F423324AF0FE2005D00C3 /* VVGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F417324AF0FE1005D00C3 /* VVGridLayout.m */; };
+		4D0F423424AF0FE2005D00C3 /* VVVH2Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F417724AF0FE1005D00C3 /* VVVH2Layout.m */; };
+		4D0F423524AF0FE2005D00C3 /* VVLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F417924AF0FE1005D00C3 /* VVLayer.m */; };
+		4D0F423624AF0FE2005D00C3 /* VVLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F417C24AF0FE1005D00C3 /* VVLineLayer.m */; };
+		4D0F423724AF0FE2005D00C3 /* TMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F417F24AF0FE1005D00C3 /* TMLazyScrollView.m */; };
+		4D0F423824AF0FE2005D00C3 /* TMLazyModelBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F418024AF0FE1005D00C3 /* TMLazyModelBucket.m */; };
+		4D0F423924AF0FE2005D00C3 /* UIView+TMLazyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F418224AF0FE1005D00C3 /* UIView+TMLazyScrollView.m */; };
+		4D0F423A24AF0FE2005D00C3 /* TMLazyReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F418424AF0FE1005D00C3 /* TMLazyReusePool.m */; };
+		4D0F423B24AF0FE2005D00C3 /* TMLazyItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F418A24AF0FE1005D00C3 /* TMLazyItemModel.m */; };
+		4D0F423C24AF0FE2005D00C3 /* NSDictionary+TMSafeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F419124AF0FE1005D00C3 /* NSDictionary+TMSafeUtils.m */; };
+		4D0F423D24AF0FE2005D00C3 /* NSArray+TMSafeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F419224AF0FE1005D00C3 /* NSArray+TMSafeUtils.m */; };
+		4D0F423E24AF0FE2005D00C3 /* NSString+TMSafeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F419324AF0FE1005D00C3 /* NSString+TMSafeUtils.m */; };
+		4D0F424024AF0FE2005D00C3 /* TangramPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F419724AF0FE1005D00C3 /* TangramPageControl.m */; };
+		4D0F424124AF0FE2005D00C3 /* TangramProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F419824AF0FE1005D00C3 /* TangramProgressBar.m */; };
+		4D0F424224AF0FE2005D00C3 /* TangramEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F419D24AF0FE1005D00C3 /* TangramEventDispatcher.m */; };
+		4D0F424324AF0FE2005D00C3 /* TangramBusIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F419E24AF0FE1005D00C3 /* TangramBusIndex.m */; };
+		4D0F424424AF0FE2005D00C3 /* TangramContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41A024AF0FE1005D00C3 /* TangramContext.m */; };
+		4D0F424524AF0FE2005D00C3 /* TangramEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41A124AF0FE1005D00C3 /* TangramEventQueue.m */; };
+		4D0F424624AF0FE2005D00C3 /* TangramEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41A424AF0FE1005D00C3 /* TangramEvent.m */; };
+		4D0F424724AF0FE2005D00C3 /* TangramBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41A624AF0FE1005D00C3 /* TangramBus.m */; };
+		4D0F424824AF0FE2005D00C3 /* TangramAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41A924AF0FE1005D00C3 /* TangramAction.m */; };
+		4D0F424924AF0FE2005D00C3 /* TangramBusIndexTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41AA24AF0FE1005D00C3 /* TangramBusIndexTopic.m */; };
+		4D0F424A24AF0FE2005D00C3 /* TangramBusIndexClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41AD24AF0FE1005D00C3 /* TangramBusIndexClass.m */; };
+		4D0F424B24AF0FE2005D00C3 /* TangramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41B024AF0FE1005D00C3 /* TangramView.m */; };
+		4D0F424C24AF0FE2005D00C3 /* NSString+Tangram.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41B324AF0FE1005D00C3 /* NSString+Tangram.m */; };
+		4D0F424D24AF0FE2005D00C3 /* UIView+Tangram.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41B424AF0FE1005D00C3 /* UIView+Tangram.m */; };
+		4D0F424E24AF0FE2005D00C3 /* TangramKitVVElementTypeMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F41B724AF0FE1005D00C3 /* TangramKitVVElementTypeMap.plist */; };
+		4D0F424F24AF0FE2005D00C3 /* TangramLayoutTypeMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F41B824AF0FE1005D00C3 /* TangramLayoutTypeMap.plist */; };
+		4D0F425024AF0FE2005D00C3 /* TmallComponent2.out in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F41B924AF0FE1005D00C3 /* TmallComponent2.out */; };
+		4D0F425124AF0FE2005D00C3 /* TMVVBaseElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41BC24AF0FE2005D00C3 /* TMVVBaseElement.m */; };
+		4D0F425224AF0FE2005D00C3 /* VVTempleteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41BD24AF0FE2005D00C3 /* VVTempleteManager.m */; };
+		4D0F425324AF0FE2005D00C3 /* TangramQuintetColumnLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41C024AF0FE2005D00C3 /* TangramQuintetColumnLayout.m */; };
+		4D0F425424AF0FE2005D00C3 /* TangramSingleAndDoubleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41C124AF0FE2005D00C3 /* TangramSingleAndDoubleLayout.m */; };
+		4D0F425524AF0FE2005D00C3 /* TangramDoubleColumnLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41C224AF0FE2005D00C3 /* TangramDoubleColumnLayout.m */; };
+		4D0F425624AF0FE2005D00C3 /* TangramStickyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41C324AF0FE2005D00C3 /* TangramStickyLayout.m */; };
+		4D0F425724AF0FE2005D00C3 /* TangramTetradColumnLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41C624AF0FE2005D00C3 /* TangramTetradColumnLayout.m */; };
+		4D0F425824AF0FE2005D00C3 /* TangramTribleColumnLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41C924AF0FE2005D00C3 /* TangramTribleColumnLayout.m */; };
+		4D0F425924AF0FE2005D00C3 /* TangramFixBottomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41CF24AF0FE2005D00C3 /* TangramFixBottomLayout.m */; };
+		4D0F425A24AF0FE2005D00C3 /* TangramFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41D124AF0FE2005D00C3 /* TangramFlowLayout.m */; };
+		4D0F425B24AF0FE2005D00C3 /* TangramWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41D224AF0FE2005D00C3 /* TangramWaterFlowLayout.m */; };
+		4D0F425C24AF0FE2005D00C3 /* TangramFixLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41D724AF0FE2005D00C3 /* TangramFixLayout.m */; };
+		4D0F425D24AF0FE2005D00C3 /* TangramFixTopLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41D824AF0FE2005D00C3 /* TangramFixTopLayout.m */; };
+		4D0F425E24AF0FE2005D00C3 /* TangramSingleColumnLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41D924AF0FE2005D00C3 /* TangramSingleColumnLayout.m */; };
+		4D0F425F24AF0FE2005D00C3 /* TangramStickyBottomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41DB24AF0FE2005D00C3 /* TangramStickyBottomLayout.m */; };
+		4D0F426024AF0FE2005D00C3 /* TangramPageScrollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41DD24AF0FE2005D00C3 /* TangramPageScrollLayout.m */; };
+		4D0F426124AF0FE2005D00C3 /* TangramDragableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41DE24AF0FE2005D00C3 /* TangramDragableLayout.m */; };
+		4D0F426224AF0FE2005D00C3 /* TangramScrollFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41DF24AF0FE2005D00C3 /* TangramScrollFlowLayout.m */; };
+		4D0F426324AF0FE2005D00C3 /* TangramScrollWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41E024AF0FE2005D00C3 /* TangramScrollWaterFlowLayout.m */; };
+		4D0F426424AF0FE2005D00C3 /* TangramDefaultItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41E324AF0FE2005D00C3 /* TangramDefaultItemModel.m */; };
+		4D0F426524AF0FE2005D00C3 /* TangramDefaultDataSourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41E624AF0FE2005D00C3 /* TangramDefaultDataSourceHelper.m */; };
+		4D0F426624AF0FE2005D00C3 /* TangramLayoutParseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41E724AF0FE2005D00C3 /* TangramLayoutParseHelper.m */; };
+		4D0F426724AF0FE2005D00C3 /* TangramDefaultItemModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41F724AF0FE2005D00C3 /* TangramDefaultItemModelFactory.m */; };
+		4D0F426824AF0FE2005D00C3 /* TangramDefaultElementFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41F924AF0FE2005D00C3 /* TangramDefaultElementFactory.m */; };
+		4D0F426924AF0FE2005D00C3 /* TangramDefaultLayoutFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41FA24AF0FE2005D00C3 /* TangramDefaultLayoutFactory.m */; };
+		4D0F426A24AF0FE2005D00C3 /* TangramSingleImageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41FD24AF0FE2005D00C3 /* TangramSingleImageElement.swift */; };
+		4D0F426B24AF0FE2005D00C3 /* TangramSimpleTextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F41FE24AF0FE2005D00C3 /* TangramSimpleTextElement.swift */; };
+		4D0F426C24AF0FE2005D00C3 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0F420024AF0FE2005D00C3 /* WebP.framework */; };
+		4D0F426D24AF0FE2005D00C3 /* WebPSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F420124AF0FE2005D00C3 /* WebPSerializer.swift */; };
+		4D0F426E24AF0FE2005D00C3 /* CGImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F420224AF0FE2005D00C3 /* CGImage+WebP.m */; };
+		4D0F426F24AF0FE2005D00C3 /* test.webp in Resources */ = {isa = PBXBuildFile; fileRef = 4D0F420324AF0FE2005D00C3 /* test.webp */; };
+		4D0F427024AF0FE2005D00C3 /* WebPProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F420424AF0FE2005D00C3 /* WebPProcessor.swift */; };
+		4D0F427124AF0FE2005D00C3 /* Image+WebP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F420524AF0FE2005D00C3 /* Image+WebP.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D0F40FA24AF0FCF005D00C3 /* NewTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D0F40FD24AF0FCF005D00C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D0F410624AF0FD0005D00C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D0F410924AF0FD0005D00C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D0F410B24AF0FD0005D00C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0F411224AF0FE1005D00C3 /* DTKBridgeSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTKBridgeSwift.swift; sourceTree = "<group>"; };
+		4D0F411424AF0FE1005D00C3 /* MockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		4D0F411524AF0FE1005D00C3 /* EntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewController.swift; sourceTree = "<group>"; };
+		4D0F411624AF0FE1005D00C3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D0F411724AF0FE1005D00C3 /* TangramMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TangramMock.json; sourceTree = "<group>"; };
+		4D0F411C24AF0FE1005D00C3 /* VVPropertySetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVPropertySetter.h; sourceTree = "<group>"; };
+		4D0F411D24AF0FE1005D00C3 /* VVPropertyStringSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVPropertyStringSetter.h; sourceTree = "<group>"; };
+		4D0F411E24AF0FE1005D00C3 /* VVPropertyIntSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVPropertyIntSetter.h; sourceTree = "<group>"; };
+		4D0F411F24AF0FE1005D00C3 /* VVPropertyFloatSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVPropertyFloatSetter.h; sourceTree = "<group>"; };
+		4D0F412024AF0FE1005D00C3 /* VVPropertySetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVPropertySetter.m; sourceTree = "<group>"; };
+		4D0F412124AF0FE1005D00C3 /* VVPropertyStringSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVPropertyStringSetter.m; sourceTree = "<group>"; };
+		4D0F412224AF0FE1005D00C3 /* VVPropertyFloatSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVPropertyFloatSetter.m; sourceTree = "<group>"; };
+		4D0F412424AF0FE1005D00C3 /* VVExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVExpression.h; sourceTree = "<group>"; };
+		4D0F412524AF0FE1005D00C3 /* VVPropertyExpressionSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVPropertyExpressionSetter.h; sourceTree = "<group>"; };
+		4D0F412624AF0FE1005D00C3 /* VVPropertyExpressionSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVPropertyExpressionSetter.m; sourceTree = "<group>"; };
+		4D0F412724AF0FE1005D00C3 /* VVExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVExpression.m; sourceTree = "<group>"; };
+		4D0F412824AF0FE1005D00C3 /* VVPropertyIntSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVPropertyIntSetter.m; sourceTree = "<group>"; };
+		4D0F412924AF0FE1005D00C3 /* VVNodeCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVNodeCreater.m; sourceTree = "<group>"; };
+		4D0F412A24AF0FE1005D00C3 /* VVNodeCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVNodeCreater.h; sourceTree = "<group>"; };
+		4D0F412C24AF0FE1005D00C3 /* VVDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVDefines.h; sourceTree = "<group>"; };
+		4D0F412D24AF0FE1005D00C3 /* VVViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVViewContainer.h; sourceTree = "<group>"; };
+		4D0F412E24AF0FE1005D00C3 /* VVBaseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBaseNode.h; sourceTree = "<group>"; };
+		4D0F412F24AF0FE1005D00C3 /* VVConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVConfig.m; sourceTree = "<group>"; };
+		4D0F413024AF0FE1005D00C3 /* VVSystemKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSystemKey.h; sourceTree = "<group>"; };
+		4D0F413124AF0FE1005D00C3 /* VVBinaryStringMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVBinaryStringMapper.m; sourceTree = "<group>"; };
+		4D0F413224AF0FE1005D00C3 /* VVNodeClassMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVNodeClassMapper.h; sourceTree = "<group>"; };
+		4D0F413324AF0FE1005D00C3 /* VVErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVErrors.m; sourceTree = "<group>"; };
+		4D0F413424AF0FE1005D00C3 /* VVViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVViewContainer.m; sourceTree = "<group>"; };
+		4D0F413524AF0FE1005D00C3 /* VVConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVConfig.h; sourceTree = "<group>"; };
+		4D0F413624AF0FE1005D00C3 /* VVBaseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVBaseNode.m; sourceTree = "<group>"; };
+		4D0F413724AF0FE1005D00C3 /* VVNodeClassMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVNodeClassMapper.m; sourceTree = "<group>"; };
+		4D0F413824AF0FE1005D00C3 /* VVBinaryStringMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBinaryStringMapper.h; sourceTree = "<group>"; };
+		4D0F413924AF0FE1005D00C3 /* VVSystemKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVSystemKey.m; sourceTree = "<group>"; };
+		4D0F413A24AF0FE1005D00C3 /* VVErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVErrors.h; sourceTree = "<group>"; };
+		4D0F413C24AF0FE1005D00C3 /* VVObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVObserver.m; sourceTree = "<group>"; };
+		4D0F413D24AF0FE1005D00C3 /* NSObject+VVObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VVObserver.h"; sourceTree = "<group>"; };
+		4D0F413E24AF0FE1005D00C3 /* VVObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVObserver.h; sourceTree = "<group>"; };
+		4D0F413F24AF0FE1005D00C3 /* NSObject+VVObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VVObserver.m"; sourceTree = "<group>"; };
+		4D0F414124AF0FE1005D00C3 /* UIView+VirtualView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VirtualView.m"; sourceTree = "<group>"; };
+		4D0F414224AF0FE1005D00C3 /* UIColor+VirtualView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VirtualView.h"; sourceTree = "<group>"; };
+		4D0F414324AF0FE1005D00C3 /* UIView+VirtualView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VirtualView.h"; sourceTree = "<group>"; };
+		4D0F414424AF0FE1005D00C3 /* UIColor+VirtualView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VirtualView.m"; sourceTree = "<group>"; };
+		4D0F414624AF0FE1005D00C3 /* VVTemplateBinaryLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTemplateBinaryLoader.h; sourceTree = "<group>"; };
+		4D0F414724AF0FE1005D00C3 /* VVTemplateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTemplateManager.m; sourceTree = "<group>"; };
+		4D0F414824AF0FE1005D00C3 /* VVBinaryLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVBinaryLoader.h; sourceTree = "<group>"; };
+		4D0F414924AF0FE1005D00C3 /* VVVersionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVVersionModel.m; sourceTree = "<group>"; };
+		4D0F414A24AF0FE1005D00C3 /* VVViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVViewFactory.m; sourceTree = "<group>"; };
+		4D0F414B24AF0FE1005D00C3 /* VVTemplateLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTemplateLoader.m; sourceTree = "<group>"; };
+		4D0F414C24AF0FE1005D00C3 /* VVBinaryLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVBinaryLoader.m; sourceTree = "<group>"; };
+		4D0F414D24AF0FE1005D00C3 /* VVTemplateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTemplateManager.h; sourceTree = "<group>"; };
+		4D0F414E24AF0FE1005D00C3 /* VVTemplateBinaryLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTemplateBinaryLoader.m; sourceTree = "<group>"; };
+		4D0F414F24AF0FE1005D00C3 /* VVVersionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVVersionModel.h; sourceTree = "<group>"; };
+		4D0F415024AF0FE1005D00C3 /* VVViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVViewFactory.h; sourceTree = "<group>"; };
+		4D0F415124AF0FE1005D00C3 /* VVTemplateLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTemplateLoader.h; sourceTree = "<group>"; };
+		4D0F415424AF0FE1005D00C3 /* NVImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVImageView.m; sourceTree = "<group>"; };
+		4D0F415524AF0FE1005D00C3 /* NVTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVTextView.m; sourceTree = "<group>"; };
+		4D0F415624AF0FE1005D00C3 /* NVLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVLineView.m; sourceTree = "<group>"; };
+		4D0F415724AF0FE1005D00C3 /* NVImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVImageView.h; sourceTree = "<group>"; };
+		4D0F415824AF0FE1005D00C3 /* NVTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVTextView.h; sourceTree = "<group>"; };
+		4D0F415924AF0FE1005D00C3 /* NVLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVLineView.h; sourceTree = "<group>"; };
+		4D0F415B24AF0FE1005D00C3 /* VVGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVGridView.h; sourceTree = "<group>"; };
+		4D0F415C24AF0FE1005D00C3 /* VVLoopingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVLoopingScrollView.h; sourceTree = "<group>"; };
+		4D0F415D24AF0FE1005D00C3 /* VVPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVPageView.h; sourceTree = "<group>"; };
+		4D0F415E24AF0FE1005D00C3 /* VVGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVGridView.m; sourceTree = "<group>"; };
+		4D0F415F24AF0FE1005D00C3 /* VVLoopingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVLoopingScrollView.m; sourceTree = "<group>"; };
+		4D0F416024AF0FE1005D00C3 /* VVPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVPageView.m; sourceTree = "<group>"; };
+		4D0F416224AF0FE1005D00C3 /* NVVH2Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVVH2Layout.m; sourceTree = "<group>"; };
+		4D0F416324AF0FE1005D00C3 /* VVLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVLayout.h; sourceTree = "<group>"; };
+		4D0F416424AF0FE1005D00C3 /* NVVHLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVVHLayout.h; sourceTree = "<group>"; };
+		4D0F416524AF0FE1005D00C3 /* VVFrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVFrameLayout.m; sourceTree = "<group>"; };
+		4D0F416624AF0FE1005D00C3 /* NVRatioLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVRatioLayout.m; sourceTree = "<group>"; };
+		4D0F416724AF0FE1005D00C3 /* VVGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVGridLayout.h; sourceTree = "<group>"; };
+		4D0F416824AF0FE1005D00C3 /* NVGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVGridLayout.h; sourceTree = "<group>"; };
+		4D0F416924AF0FE1005D00C3 /* VVVH2Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVVH2Layout.h; sourceTree = "<group>"; };
+		4D0F416A24AF0FE1005D00C3 /* VVVHLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVVHLayout.m; sourceTree = "<group>"; };
+		4D0F416B24AF0FE1005D00C3 /* NVFrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVFrameLayout.m; sourceTree = "<group>"; };
+		4D0F416C24AF0FE1005D00C3 /* VVRatioLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVRatioLayout.m; sourceTree = "<group>"; };
+		4D0F416D24AF0FE1005D00C3 /* VVLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVLayout.m; sourceTree = "<group>"; };
+		4D0F416E24AF0FE1005D00C3 /* NVVH2Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVVH2Layout.h; sourceTree = "<group>"; };
+		4D0F416F24AF0FE1005D00C3 /* NVRatioLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVRatioLayout.h; sourceTree = "<group>"; };
+		4D0F417024AF0FE1005D00C3 /* VVFrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVFrameLayout.h; sourceTree = "<group>"; };
+		4D0F417124AF0FE1005D00C3 /* NVVHLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVVHLayout.m; sourceTree = "<group>"; };
+		4D0F417224AF0FE1005D00C3 /* NVGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVGridLayout.m; sourceTree = "<group>"; };
+		4D0F417324AF0FE1005D00C3 /* VVGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVGridLayout.m; sourceTree = "<group>"; };
+		4D0F417424AF0FE1005D00C3 /* VVRatioLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVRatioLayout.h; sourceTree = "<group>"; };
+		4D0F417524AF0FE1005D00C3 /* NVFrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVFrameLayout.h; sourceTree = "<group>"; };
+		4D0F417624AF0FE1005D00C3 /* VVVHLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVVHLayout.h; sourceTree = "<group>"; };
+		4D0F417724AF0FE1005D00C3 /* VVVH2Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVVH2Layout.m; sourceTree = "<group>"; };
+		4D0F417924AF0FE1005D00C3 /* VVLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVLayer.m; sourceTree = "<group>"; };
+		4D0F417A24AF0FE1005D00C3 /* VVLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVLineLayer.h; sourceTree = "<group>"; };
+		4D0F417B24AF0FE1005D00C3 /* VVLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVLayer.h; sourceTree = "<group>"; };
+		4D0F417C24AF0FE1005D00C3 /* VVLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVLineLayer.m; sourceTree = "<group>"; };
+		4D0F417F24AF0FE1005D00C3 /* TMLazyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLazyScrollView.m; sourceTree = "<group>"; };
+		4D0F418024AF0FE1005D00C3 /* TMLazyModelBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLazyModelBucket.m; sourceTree = "<group>"; };
+		4D0F418124AF0FE1005D00C3 /* TMLazyItemViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLazyItemViewProtocol.h; sourceTree = "<group>"; };
+		4D0F418224AF0FE1005D00C3 /* UIView+TMLazyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TMLazyScrollView.m"; sourceTree = "<group>"; };
+		4D0F418324AF0FE1005D00C3 /* TMLazyItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLazyItemModel.h; sourceTree = "<group>"; };
+		4D0F418424AF0FE1005D00C3 /* TMLazyReusePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLazyReusePool.m; sourceTree = "<group>"; };
+		4D0F418524AF0FE1005D00C3 /* TMLazyModelBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLazyModelBucket.h; sourceTree = "<group>"; };
+		4D0F418624AF0FE1005D00C3 /* TMLazyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLazyScrollView.h; sourceTree = "<group>"; };
+		4D0F418724AF0FE1005D00C3 /* UIView+TMLazyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TMLazyScrollView.h"; sourceTree = "<group>"; };
+		4D0F418824AF0FE1005D00C3 /* LazyScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyScroll.h; sourceTree = "<group>"; };
+		4D0F418924AF0FE1005D00C3 /* TMLazyReusePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLazyReusePool.h; sourceTree = "<group>"; };
+		4D0F418A24AF0FE1005D00C3 /* TMLazyItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLazyItemModel.m; sourceTree = "<group>"; };
+		4D0F418D24AF0FE1005D00C3 /* NSDictionary+TMSafeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TMSafeUtils.h"; sourceTree = "<group>"; };
+		4D0F418E24AF0FE1005D00C3 /* TMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMUtils.h; sourceTree = "<group>"; };
+		4D0F418F24AF0FE1005D00C3 /* NSString+TMSafeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TMSafeUtils.h"; sourceTree = "<group>"; };
+		4D0F419024AF0FE1005D00C3 /* NSArray+TMSafeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TMSafeUtils.h"; sourceTree = "<group>"; };
+		4D0F419124AF0FE1005D00C3 /* NSDictionary+TMSafeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TMSafeUtils.m"; sourceTree = "<group>"; };
+		4D0F419224AF0FE1005D00C3 /* NSArray+TMSafeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TMSafeUtils.m"; sourceTree = "<group>"; };
+		4D0F419324AF0FE1005D00C3 /* NSString+TMSafeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TMSafeUtils.m"; sourceTree = "<group>"; };
+		4D0F419724AF0FE1005D00C3 /* TangramPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramPageControl.m; sourceTree = "<group>"; };
+		4D0F419824AF0FE1005D00C3 /* TangramProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramProgressBar.m; sourceTree = "<group>"; };
+		4D0F419924AF0FE1005D00C3 /* TangramPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramPageControl.h; sourceTree = "<group>"; };
+		4D0F419A24AF0FE1005D00C3 /* TangramProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramProgressBar.h; sourceTree = "<group>"; };
+		4D0F419C24AF0FE1005D00C3 /* TangramAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramAction.h; sourceTree = "<group>"; };
+		4D0F419D24AF0FE1005D00C3 /* TangramEventDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramEventDispatcher.m; sourceTree = "<group>"; };
+		4D0F419E24AF0FE1005D00C3 /* TangramBusIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramBusIndex.m; sourceTree = "<group>"; };
+		4D0F419F24AF0FE1005D00C3 /* TangramBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramBus.h; sourceTree = "<group>"; };
+		4D0F41A024AF0FE1005D00C3 /* TangramContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramContext.m; sourceTree = "<group>"; };
+		4D0F41A124AF0FE1005D00C3 /* TangramEventQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramEventQueue.m; sourceTree = "<group>"; };
+		4D0F41A224AF0FE1005D00C3 /* TangramBusIndexTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramBusIndexTopic.h; sourceTree = "<group>"; };
+		4D0F41A324AF0FE1005D00C3 /* TangramBusIndexClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramBusIndexClass.h; sourceTree = "<group>"; };
+		4D0F41A424AF0FE1005D00C3 /* TangramEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramEvent.m; sourceTree = "<group>"; };
+		4D0F41A524AF0FE1005D00C3 /* TangramContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramContext.h; sourceTree = "<group>"; };
+		4D0F41A624AF0FE1005D00C3 /* TangramBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramBus.m; sourceTree = "<group>"; };
+		4D0F41A724AF0FE1005D00C3 /* TangramEventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramEventDispatcher.h; sourceTree = "<group>"; };
+		4D0F41A824AF0FE1005D00C3 /* TangramBusIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramBusIndex.h; sourceTree = "<group>"; };
+		4D0F41A924AF0FE1005D00C3 /* TangramAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramAction.m; sourceTree = "<group>"; };
+		4D0F41AA24AF0FE1005D00C3 /* TangramBusIndexTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramBusIndexTopic.m; sourceTree = "<group>"; };
+		4D0F41AB24AF0FE1005D00C3 /* TangramEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramEventQueue.h; sourceTree = "<group>"; };
+		4D0F41AC24AF0FE1005D00C3 /* TangramEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramEvent.h; sourceTree = "<group>"; };
+		4D0F41AD24AF0FE1005D00C3 /* TangramBusIndexClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramBusIndexClass.m; sourceTree = "<group>"; };
+		4D0F41AF24AF0FE1005D00C3 /* TangramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramView.h; sourceTree = "<group>"; };
+		4D0F41B024AF0FE1005D00C3 /* TangramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramView.m; sourceTree = "<group>"; };
+		4D0F41B224AF0FE1005D00C3 /* UIView+Tangram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tangram.h"; sourceTree = "<group>"; };
+		4D0F41B324AF0FE1005D00C3 /* NSString+Tangram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tangram.m"; sourceTree = "<group>"; };
+		4D0F41B424AF0FE1005D00C3 /* UIView+Tangram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tangram.m"; sourceTree = "<group>"; };
+		4D0F41B524AF0FE1005D00C3 /* NSString+Tangram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tangram.h"; sourceTree = "<group>"; };
+		4D0F41B724AF0FE1005D00C3 /* TangramKitVVElementTypeMap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TangramKitVVElementTypeMap.plist; sourceTree = "<group>"; };
+		4D0F41B824AF0FE1005D00C3 /* TangramLayoutTypeMap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TangramLayoutTypeMap.plist; sourceTree = "<group>"; };
+		4D0F41B924AF0FE1005D00C3 /* TmallComponent2.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = TmallComponent2.out; sourceTree = "<group>"; };
+		4D0F41BB24AF0FE1005D00C3 /* VVTempleteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTempleteManager.h; sourceTree = "<group>"; };
+		4D0F41BC24AF0FE2005D00C3 /* TMVVBaseElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMVVBaseElement.m; sourceTree = "<group>"; };
+		4D0F41BD24AF0FE2005D00C3 /* VVTempleteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTempleteManager.m; sourceTree = "<group>"; };
+		4D0F41BE24AF0FE2005D00C3 /* TMVVBaseElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMVVBaseElement.h; sourceTree = "<group>"; };
+		4D0F41C024AF0FE2005D00C3 /* TangramQuintetColumnLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramQuintetColumnLayout.m; sourceTree = "<group>"; };
+		4D0F41C124AF0FE2005D00C3 /* TangramSingleAndDoubleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramSingleAndDoubleLayout.m; sourceTree = "<group>"; };
+		4D0F41C224AF0FE2005D00C3 /* TangramDoubleColumnLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramDoubleColumnLayout.m; sourceTree = "<group>"; };
+		4D0F41C324AF0FE2005D00C3 /* TangramStickyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramStickyLayout.m; sourceTree = "<group>"; };
+		4D0F41C424AF0FE2005D00C3 /* TangramFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramFlowLayout.h; sourceTree = "<group>"; };
+		4D0F41C524AF0FE2005D00C3 /* TangramWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramWaterFlowLayout.h; sourceTree = "<group>"; };
+		4D0F41C624AF0FE2005D00C3 /* TangramTetradColumnLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramTetradColumnLayout.m; sourceTree = "<group>"; };
+		4D0F41C724AF0FE2005D00C3 /* TangramPageScrollLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramPageScrollLayout.h; sourceTree = "<group>"; };
+		4D0F41C824AF0FE2005D00C3 /* TangramStickyBottomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramStickyBottomLayout.h; sourceTree = "<group>"; };
+		4D0F41C924AF0FE2005D00C3 /* TangramTribleColumnLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramTribleColumnLayout.m; sourceTree = "<group>"; };
+		4D0F41CA24AF0FE2005D00C3 /* TangramSingleColumnLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramSingleColumnLayout.h; sourceTree = "<group>"; };
+		4D0F41CB24AF0FE2005D00C3 /* TangramFixTopLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramFixTopLayout.h; sourceTree = "<group>"; };
+		4D0F41CC24AF0FE2005D00C3 /* TangramFixLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramFixLayout.h; sourceTree = "<group>"; };
+		4D0F41CD24AF0FE2005D00C3 /* TangramScrollFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramScrollFlowLayout.h; sourceTree = "<group>"; };
+		4D0F41CE24AF0FE2005D00C3 /* TangramDragableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramDragableLayout.h; sourceTree = "<group>"; };
+		4D0F41CF24AF0FE2005D00C3 /* TangramFixBottomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramFixBottomLayout.m; sourceTree = "<group>"; };
+		4D0F41D024AF0FE2005D00C3 /* TangramScrollWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramScrollWaterFlowLayout.h; sourceTree = "<group>"; };
+		4D0F41D124AF0FE2005D00C3 /* TangramFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramFlowLayout.m; sourceTree = "<group>"; };
+		4D0F41D224AF0FE2005D00C3 /* TangramWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramWaterFlowLayout.m; sourceTree = "<group>"; };
+		4D0F41D324AF0FE2005D00C3 /* TangramStickyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramStickyLayout.h; sourceTree = "<group>"; };
+		4D0F41D424AF0FE2005D00C3 /* TangramDoubleColumnLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramDoubleColumnLayout.h; sourceTree = "<group>"; };
+		4D0F41D524AF0FE2005D00C3 /* TangramQuintetColumnLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramQuintetColumnLayout.h; sourceTree = "<group>"; };
+		4D0F41D624AF0FE2005D00C3 /* TangramSingleAndDoubleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramSingleAndDoubleLayout.h; sourceTree = "<group>"; };
+		4D0F41D724AF0FE2005D00C3 /* TangramFixLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramFixLayout.m; sourceTree = "<group>"; };
+		4D0F41D824AF0FE2005D00C3 /* TangramFixTopLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramFixTopLayout.m; sourceTree = "<group>"; };
+		4D0F41D924AF0FE2005D00C3 /* TangramSingleColumnLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramSingleColumnLayout.m; sourceTree = "<group>"; };
+		4D0F41DA24AF0FE2005D00C3 /* TangramTribleColumnLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramTribleColumnLayout.h; sourceTree = "<group>"; };
+		4D0F41DB24AF0FE2005D00C3 /* TangramStickyBottomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramStickyBottomLayout.m; sourceTree = "<group>"; };
+		4D0F41DC24AF0FE2005D00C3 /* TangramTetradColumnLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramTetradColumnLayout.h; sourceTree = "<group>"; };
+		4D0F41DD24AF0FE2005D00C3 /* TangramPageScrollLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramPageScrollLayout.m; sourceTree = "<group>"; };
+		4D0F41DE24AF0FE2005D00C3 /* TangramDragableLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramDragableLayout.m; sourceTree = "<group>"; };
+		4D0F41DF24AF0FE2005D00C3 /* TangramScrollFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramScrollFlowLayout.m; sourceTree = "<group>"; };
+		4D0F41E024AF0FE2005D00C3 /* TangramScrollWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramScrollWaterFlowLayout.m; sourceTree = "<group>"; };
+		4D0F41E124AF0FE2005D00C3 /* TangramFixBottomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramFixBottomLayout.h; sourceTree = "<group>"; };
+		4D0F41E324AF0FE2005D00C3 /* TangramDefaultItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramDefaultItemModel.m; sourceTree = "<group>"; };
+		4D0F41E424AF0FE2005D00C3 /* TangramDefaultItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramDefaultItemModel.h; sourceTree = "<group>"; };
+		4D0F41E624AF0FE2005D00C3 /* TangramDefaultDataSourceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramDefaultDataSourceHelper.m; sourceTree = "<group>"; };
+		4D0F41E724AF0FE2005D00C3 /* TangramLayoutParseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramLayoutParseHelper.m; sourceTree = "<group>"; };
+		4D0F41E824AF0FE2005D00C3 /* TangramLayoutParseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramLayoutParseHelper.h; sourceTree = "<group>"; };
+		4D0F41E924AF0FE2005D00C3 /* TangramDefaultDataSourceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramDefaultDataSourceHelper.h; sourceTree = "<group>"; };
+		4D0F41EB24AF0FE2005D00C3 /* TangramItemModelFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramItemModelFactoryProtocol.h; sourceTree = "<group>"; };
+		4D0F41EC24AF0FE2005D00C3 /* TangramElementHeightProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramElementHeightProtocol.h; sourceTree = "<group>"; };
+		4D0F41ED24AF0FE2005D00C3 /* TangramEasyElementProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramEasyElementProtocol.h; sourceTree = "<group>"; };
+		4D0F41EE24AF0FE2005D00C3 /* TangramDefaultEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramDefaultEventDelegate.h; sourceTree = "<group>"; };
+		4D0F41EF24AF0FE2005D00C3 /* TangramLayoutFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramLayoutFactoryProtocol.h; sourceTree = "<group>"; };
+		4D0F41F024AF0FE2005D00C3 /* TangramElementReuseIdentifierProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramElementReuseIdentifierProtocol.h; sourceTree = "<group>"; };
+		4D0F41F124AF0FE2005D00C3 /* TangramLayoutProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramLayoutProtocol.h; sourceTree = "<group>"; };
+		4D0F41F224AF0FE2005D00C3 /* TangramScrollLayoutProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramScrollLayoutProtocol.h; sourceTree = "<group>"; };
+		4D0F41F324AF0FE2005D00C3 /* TangramItemModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramItemModelProtocol.h; sourceTree = "<group>"; };
+		4D0F41F424AF0FE2005D00C3 /* TangramElementFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramElementFactoryProtocol.h; sourceTree = "<group>"; };
+		4D0F41F624AF0FE2005D00C3 /* TangramDefaultElementFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramDefaultElementFactory.h; sourceTree = "<group>"; };
+		4D0F41F724AF0FE2005D00C3 /* TangramDefaultItemModelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramDefaultItemModelFactory.m; sourceTree = "<group>"; };
+		4D0F41F824AF0FE2005D00C3 /* TangramDefaultLayoutFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramDefaultLayoutFactory.h; sourceTree = "<group>"; };
+		4D0F41F924AF0FE2005D00C3 /* TangramDefaultElementFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramDefaultElementFactory.m; sourceTree = "<group>"; };
+		4D0F41FA24AF0FE2005D00C3 /* TangramDefaultLayoutFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TangramDefaultLayoutFactory.m; sourceTree = "<group>"; };
+		4D0F41FB24AF0FE2005D00C3 /* TangramDefaultItemModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangramDefaultItemModelFactory.h; sourceTree = "<group>"; };
+		4D0F41FD24AF0FE2005D00C3 /* TangramSingleImageElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TangramSingleImageElement.swift; sourceTree = "<group>"; };
+		4D0F41FE24AF0FE2005D00C3 /* TangramSimpleTextElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TangramSimpleTextElement.swift; sourceTree = "<group>"; };
+		4D0F420024AF0FE2005D00C3 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		4D0F420124AF0FE2005D00C3 /* WebPSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPSerializer.swift; sourceTree = "<group>"; };
+		4D0F420224AF0FE2005D00C3 /* CGImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGImage+WebP.m"; sourceTree = "<group>"; };
+		4D0F420324AF0FE2005D00C3 /* test.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.webp; sourceTree = "<group>"; };
+		4D0F420424AF0FE2005D00C3 /* WebPProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPProcessor.swift; sourceTree = "<group>"; };
+		4D0F420524AF0FE2005D00C3 /* Image+WebP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+WebP.swift"; sourceTree = "<group>"; };
+		4D0F420624AF0FE2005D00C3 /* CGImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+WebP.h"; sourceTree = "<group>"; };
+		4D0F427224AF0FEE005D00C3 /* TestDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D0F427424AF1ADE005D00C3 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D0F40F724AF0FCF005D00C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0F426C24AF0FE2005D00C3 /* WebP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D0F40F124AF0FCF005D00C3 = {
+			isa = PBXGroup;
+			children = (
+				4D0F40FC24AF0FCF005D00C3 /* NewTestDemo */,
+				4D0F40FB24AF0FCF005D00C3 /* Products */,
+				4D0F427324AF1ADE005D00C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D0F40FB24AF0FCF005D00C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F40FA24AF0FCF005D00C3 /* NewTestDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D0F40FC24AF0FCF005D00C3 /* NewTestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F427224AF0FEE005D00C3 /* TestDemo-Bridging-Header.h */,
+				4D0F411124AF0FE1005D00C3 /* BridgeSwift */,
+				4D0F41FF24AF0FE2005D00C3 /* Classes */,
+				4D0F41FC24AF0FE2005D00C3 /* Element */,
+				4D0F417D24AF0FE1005D00C3 /* LazyScroll */,
+				4D0F419524AF0FE1005D00C3 /* Tangram */,
+				4D0F418B24AF0FE1005D00C3 /* TMUtils */,
+				4D0F411824AF0FE1005D00C3 /* VirtualView */,
+				4D0F40FD24AF0FCF005D00C3 /* AppDelegate.swift */,
+				4D0F411324AF0FE1005D00C3 /* TestVCs */,
+				4D0F410624AF0FD0005D00C3 /* Assets.xcassets */,
+				4D0F410824AF0FD0005D00C3 /* LaunchScreen.storyboard */,
+				4D0F410B24AF0FD0005D00C3 /* Info.plist */,
+			);
+			path = NewTestDemo;
+			sourceTree = "<group>";
+		};
+		4D0F411124AF0FE1005D00C3 /* BridgeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F411224AF0FE1005D00C3 /* DTKBridgeSwift.swift */,
+			);
+			path = BridgeSwift;
+			sourceTree = "<group>";
+		};
+		4D0F411324AF0FE1005D00C3 /* TestVCs */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F411424AF0FE1005D00C3 /* MockViewController.swift */,
+				4D0F411524AF0FE1005D00C3 /* EntryTableViewController.swift */,
+				4D0F411624AF0FE1005D00C3 /* ViewController.swift */,
+				4D0F411724AF0FE1005D00C3 /* TangramMock.json */,
+			);
+			path = TestVCs;
+			sourceTree = "<group>";
+		};
+		4D0F411824AF0FE1005D00C3 /* VirtualView */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F411924AF0FE1005D00C3 /* VirtualView */,
+			);
+			path = VirtualView;
+			sourceTree = "<group>";
+		};
+		4D0F411924AF0FE1005D00C3 /* VirtualView */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F411A24AF0FE1005D00C3 /* Creater */,
+				4D0F412B24AF0FE1005D00C3 /* Core */,
+				4D0F413B24AF0FE1005D00C3 /* Observer */,
+				4D0F414024AF0FE1005D00C3 /* Utils */,
+				4D0F414524AF0FE1005D00C3 /* Loader */,
+				4D0F415224AF0FE1005D00C3 /* Node */,
+			);
+			path = VirtualView;
+			sourceTree = "<group>";
+		};
+		4D0F411A24AF0FE1005D00C3 /* Creater */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F411B24AF0FE1005D00C3 /* Setter */,
+				4D0F412924AF0FE1005D00C3 /* VVNodeCreater.m */,
+				4D0F412A24AF0FE1005D00C3 /* VVNodeCreater.h */,
+			);
+			path = Creater;
+			sourceTree = "<group>";
+		};
+		4D0F411B24AF0FE1005D00C3 /* Setter */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F411C24AF0FE1005D00C3 /* VVPropertySetter.h */,
+				4D0F411D24AF0FE1005D00C3 /* VVPropertyStringSetter.h */,
+				4D0F411E24AF0FE1005D00C3 /* VVPropertyIntSetter.h */,
+				4D0F411F24AF0FE1005D00C3 /* VVPropertyFloatSetter.h */,
+				4D0F412024AF0FE1005D00C3 /* VVPropertySetter.m */,
+				4D0F412124AF0FE1005D00C3 /* VVPropertyStringSetter.m */,
+				4D0F412224AF0FE1005D00C3 /* VVPropertyFloatSetter.m */,
+				4D0F412324AF0FE1005D00C3 /* Expression */,
+				4D0F412824AF0FE1005D00C3 /* VVPropertyIntSetter.m */,
+			);
+			path = Setter;
+			sourceTree = "<group>";
+		};
+		4D0F412324AF0FE1005D00C3 /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F412424AF0FE1005D00C3 /* VVExpression.h */,
+				4D0F412524AF0FE1005D00C3 /* VVPropertyExpressionSetter.h */,
+				4D0F412624AF0FE1005D00C3 /* VVPropertyExpressionSetter.m */,
+				4D0F412724AF0FE1005D00C3 /* VVExpression.m */,
+			);
+			path = Expression;
+			sourceTree = "<group>";
+		};
+		4D0F412B24AF0FE1005D00C3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F412C24AF0FE1005D00C3 /* VVDefines.h */,
+				4D0F412D24AF0FE1005D00C3 /* VVViewContainer.h */,
+				4D0F412E24AF0FE1005D00C3 /* VVBaseNode.h */,
+				4D0F412F24AF0FE1005D00C3 /* VVConfig.m */,
+				4D0F413024AF0FE1005D00C3 /* VVSystemKey.h */,
+				4D0F413124AF0FE1005D00C3 /* VVBinaryStringMapper.m */,
+				4D0F413224AF0FE1005D00C3 /* VVNodeClassMapper.h */,
+				4D0F413324AF0FE1005D00C3 /* VVErrors.m */,
+				4D0F413424AF0FE1005D00C3 /* VVViewContainer.m */,
+				4D0F413524AF0FE1005D00C3 /* VVConfig.h */,
+				4D0F413624AF0FE1005D00C3 /* VVBaseNode.m */,
+				4D0F413724AF0FE1005D00C3 /* VVNodeClassMapper.m */,
+				4D0F413824AF0FE1005D00C3 /* VVBinaryStringMapper.h */,
+				4D0F413924AF0FE1005D00C3 /* VVSystemKey.m */,
+				4D0F413A24AF0FE1005D00C3 /* VVErrors.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4D0F413B24AF0FE1005D00C3 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F413C24AF0FE1005D00C3 /* VVObserver.m */,
+				4D0F413D24AF0FE1005D00C3 /* NSObject+VVObserver.h */,
+				4D0F413E24AF0FE1005D00C3 /* VVObserver.h */,
+				4D0F413F24AF0FE1005D00C3 /* NSObject+VVObserver.m */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		4D0F414024AF0FE1005D00C3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F414124AF0FE1005D00C3 /* UIView+VirtualView.m */,
+				4D0F414224AF0FE1005D00C3 /* UIColor+VirtualView.h */,
+				4D0F414324AF0FE1005D00C3 /* UIView+VirtualView.h */,
+				4D0F414424AF0FE1005D00C3 /* UIColor+VirtualView.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4D0F414524AF0FE1005D00C3 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F414624AF0FE1005D00C3 /* VVTemplateBinaryLoader.h */,
+				4D0F414724AF0FE1005D00C3 /* VVTemplateManager.m */,
+				4D0F414824AF0FE1005D00C3 /* VVBinaryLoader.h */,
+				4D0F414924AF0FE1005D00C3 /* VVVersionModel.m */,
+				4D0F414A24AF0FE1005D00C3 /* VVViewFactory.m */,
+				4D0F414B24AF0FE1005D00C3 /* VVTemplateLoader.m */,
+				4D0F414C24AF0FE1005D00C3 /* VVBinaryLoader.m */,
+				4D0F414D24AF0FE1005D00C3 /* VVTemplateManager.h */,
+				4D0F414E24AF0FE1005D00C3 /* VVTemplateBinaryLoader.m */,
+				4D0F414F24AF0FE1005D00C3 /* VVVersionModel.h */,
+				4D0F415024AF0FE1005D00C3 /* VVViewFactory.h */,
+				4D0F415124AF0FE1005D00C3 /* VVTemplateLoader.h */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		4D0F415224AF0FE1005D00C3 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F415324AF0FE1005D00C3 /* Widget */,
+				4D0F415A24AF0FE1005D00C3 /* Magic */,
+				4D0F416124AF0FE1005D00C3 /* Layout */,
+				4D0F417824AF0FE1005D00C3 /* Layer */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		4D0F415324AF0FE1005D00C3 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F415424AF0FE1005D00C3 /* NVImageView.m */,
+				4D0F415524AF0FE1005D00C3 /* NVTextView.m */,
+				4D0F415624AF0FE1005D00C3 /* NVLineView.m */,
+				4D0F415724AF0FE1005D00C3 /* NVImageView.h */,
+				4D0F415824AF0FE1005D00C3 /* NVTextView.h */,
+				4D0F415924AF0FE1005D00C3 /* NVLineView.h */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		4D0F415A24AF0FE1005D00C3 /* Magic */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F415B24AF0FE1005D00C3 /* VVGridView.h */,
+				4D0F415C24AF0FE1005D00C3 /* VVLoopingScrollView.h */,
+				4D0F415D24AF0FE1005D00C3 /* VVPageView.h */,
+				4D0F415E24AF0FE1005D00C3 /* VVGridView.m */,
+				4D0F415F24AF0FE1005D00C3 /* VVLoopingScrollView.m */,
+				4D0F416024AF0FE1005D00C3 /* VVPageView.m */,
+			);
+			path = Magic;
+			sourceTree = "<group>";
+		};
+		4D0F416124AF0FE1005D00C3 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F416224AF0FE1005D00C3 /* NVVH2Layout.m */,
+				4D0F416324AF0FE1005D00C3 /* VVLayout.h */,
+				4D0F416424AF0FE1005D00C3 /* NVVHLayout.h */,
+				4D0F416524AF0FE1005D00C3 /* VVFrameLayout.m */,
+				4D0F416624AF0FE1005D00C3 /* NVRatioLayout.m */,
+				4D0F416724AF0FE1005D00C3 /* VVGridLayout.h */,
+				4D0F416824AF0FE1005D00C3 /* NVGridLayout.h */,
+				4D0F416924AF0FE1005D00C3 /* VVVH2Layout.h */,
+				4D0F416A24AF0FE1005D00C3 /* VVVHLayout.m */,
+				4D0F416B24AF0FE1005D00C3 /* NVFrameLayout.m */,
+				4D0F416C24AF0FE1005D00C3 /* VVRatioLayout.m */,
+				4D0F416D24AF0FE1005D00C3 /* VVLayout.m */,
+				4D0F416E24AF0FE1005D00C3 /* NVVH2Layout.h */,
+				4D0F416F24AF0FE1005D00C3 /* NVRatioLayout.h */,
+				4D0F417024AF0FE1005D00C3 /* VVFrameLayout.h */,
+				4D0F417124AF0FE1005D00C3 /* NVVHLayout.m */,
+				4D0F417224AF0FE1005D00C3 /* NVGridLayout.m */,
+				4D0F417324AF0FE1005D00C3 /* VVGridLayout.m */,
+				4D0F417424AF0FE1005D00C3 /* VVRatioLayout.h */,
+				4D0F417524AF0FE1005D00C3 /* NVFrameLayout.h */,
+				4D0F417624AF0FE1005D00C3 /* VVVHLayout.h */,
+				4D0F417724AF0FE1005D00C3 /* VVVH2Layout.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		4D0F417824AF0FE1005D00C3 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F417924AF0FE1005D00C3 /* VVLayer.m */,
+				4D0F417A24AF0FE1005D00C3 /* VVLineLayer.h */,
+				4D0F417B24AF0FE1005D00C3 /* VVLayer.h */,
+				4D0F417C24AF0FE1005D00C3 /* VVLineLayer.m */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		4D0F417D24AF0FE1005D00C3 /* LazyScroll */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F417E24AF0FE1005D00C3 /* LazyScrollView */,
+			);
+			path = LazyScroll;
+			sourceTree = "<group>";
+		};
+		4D0F417E24AF0FE1005D00C3 /* LazyScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F417F24AF0FE1005D00C3 /* TMLazyScrollView.m */,
+				4D0F418024AF0FE1005D00C3 /* TMLazyModelBucket.m */,
+				4D0F418124AF0FE1005D00C3 /* TMLazyItemViewProtocol.h */,
+				4D0F418224AF0FE1005D00C3 /* UIView+TMLazyScrollView.m */,
+				4D0F418324AF0FE1005D00C3 /* TMLazyItemModel.h */,
+				4D0F418424AF0FE1005D00C3 /* TMLazyReusePool.m */,
+				4D0F418524AF0FE1005D00C3 /* TMLazyModelBucket.h */,
+				4D0F418624AF0FE1005D00C3 /* TMLazyScrollView.h */,
+				4D0F418724AF0FE1005D00C3 /* UIView+TMLazyScrollView.h */,
+				4D0F418824AF0FE1005D00C3 /* LazyScroll.h */,
+				4D0F418924AF0FE1005D00C3 /* TMLazyReusePool.h */,
+				4D0F418A24AF0FE1005D00C3 /* TMLazyItemModel.m */,
+			);
+			path = LazyScrollView;
+			sourceTree = "<group>";
+		};
+		4D0F418B24AF0FE1005D00C3 /* TMUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F418C24AF0FE1005D00C3 /* TMUtils */,
+			);
+			path = TMUtils;
+			sourceTree = "<group>";
+		};
+		4D0F418C24AF0FE1005D00C3 /* TMUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F418D24AF0FE1005D00C3 /* NSDictionary+TMSafeUtils.h */,
+				4D0F418E24AF0FE1005D00C3 /* TMUtils.h */,
+				4D0F418F24AF0FE1005D00C3 /* NSString+TMSafeUtils.h */,
+				4D0F419024AF0FE1005D00C3 /* NSArray+TMSafeUtils.h */,
+				4D0F419124AF0FE1005D00C3 /* NSDictionary+TMSafeUtils.m */,
+				4D0F419224AF0FE1005D00C3 /* NSArray+TMSafeUtils.m */,
+				4D0F419324AF0FE1005D00C3 /* NSString+TMSafeUtils.m */,
+			);
+			path = TMUtils;
+			sourceTree = "<group>";
+		};
+		4D0F419524AF0FE1005D00C3 /* Tangram */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F419624AF0FE1005D00C3 /* UI */,
+				4D0F419B24AF0FE1005D00C3 /* EventBus */,
+				4D0F41AE24AF0FE1005D00C3 /* Core */,
+				4D0F41B124AF0FE1005D00C3 /* Util */,
+				4D0F41B624AF0FE1005D00C3 /* Resources */,
+				4D0F41BA24AF0FE1005D00C3 /* VirtualView */,
+				4D0F41BF24AF0FE2005D00C3 /* Layouts */,
+				4D0F41E224AF0FE2005D00C3 /* Model */,
+				4D0F41E524AF0FE2005D00C3 /* Helper */,
+				4D0F41EA24AF0FE2005D00C3 /* Protocols */,
+				4D0F41F524AF0FE2005D00C3 /* Factory */,
+			);
+			path = Tangram;
+			sourceTree = "<group>";
+		};
+		4D0F419624AF0FE1005D00C3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F419724AF0FE1005D00C3 /* TangramPageControl.m */,
+				4D0F419824AF0FE1005D00C3 /* TangramProgressBar.m */,
+				4D0F419924AF0FE1005D00C3 /* TangramPageControl.h */,
+				4D0F419A24AF0FE1005D00C3 /* TangramProgressBar.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4D0F419B24AF0FE1005D00C3 /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F419C24AF0FE1005D00C3 /* TangramAction.h */,
+				4D0F419D24AF0FE1005D00C3 /* TangramEventDispatcher.m */,
+				4D0F419E24AF0FE1005D00C3 /* TangramBusIndex.m */,
+				4D0F419F24AF0FE1005D00C3 /* TangramBus.h */,
+				4D0F41A024AF0FE1005D00C3 /* TangramContext.m */,
+				4D0F41A124AF0FE1005D00C3 /* TangramEventQueue.m */,
+				4D0F41A224AF0FE1005D00C3 /* TangramBusIndexTopic.h */,
+				4D0F41A324AF0FE1005D00C3 /* TangramBusIndexClass.h */,
+				4D0F41A424AF0FE1005D00C3 /* TangramEvent.m */,
+				4D0F41A524AF0FE1005D00C3 /* TangramContext.h */,
+				4D0F41A624AF0FE1005D00C3 /* TangramBus.m */,
+				4D0F41A724AF0FE1005D00C3 /* TangramEventDispatcher.h */,
+				4D0F41A824AF0FE1005D00C3 /* TangramBusIndex.h */,
+				4D0F41A924AF0FE1005D00C3 /* TangramAction.m */,
+				4D0F41AA24AF0FE1005D00C3 /* TangramBusIndexTopic.m */,
+				4D0F41AB24AF0FE1005D00C3 /* TangramEventQueue.h */,
+				4D0F41AC24AF0FE1005D00C3 /* TangramEvent.h */,
+				4D0F41AD24AF0FE1005D00C3 /* TangramBusIndexClass.m */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
+		4D0F41AE24AF0FE1005D00C3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41AF24AF0FE1005D00C3 /* TangramView.h */,
+				4D0F41B024AF0FE1005D00C3 /* TangramView.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4D0F41B124AF0FE1005D00C3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41B224AF0FE1005D00C3 /* UIView+Tangram.h */,
+				4D0F41B324AF0FE1005D00C3 /* NSString+Tangram.m */,
+				4D0F41B424AF0FE1005D00C3 /* UIView+Tangram.m */,
+				4D0F41B524AF0FE1005D00C3 /* NSString+Tangram.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4D0F41B624AF0FE1005D00C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41B724AF0FE1005D00C3 /* TangramKitVVElementTypeMap.plist */,
+				4D0F41B824AF0FE1005D00C3 /* TangramLayoutTypeMap.plist */,
+				4D0F41B924AF0FE1005D00C3 /* TmallComponent2.out */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D0F41BA24AF0FE1005D00C3 /* VirtualView */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41BB24AF0FE1005D00C3 /* VVTempleteManager.h */,
+				4D0F41BC24AF0FE2005D00C3 /* TMVVBaseElement.m */,
+				4D0F41BD24AF0FE2005D00C3 /* VVTempleteManager.m */,
+				4D0F41BE24AF0FE2005D00C3 /* TMVVBaseElement.h */,
+			);
+			path = VirtualView;
+			sourceTree = "<group>";
+		};
+		4D0F41BF24AF0FE2005D00C3 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41C024AF0FE2005D00C3 /* TangramQuintetColumnLayout.m */,
+				4D0F41C124AF0FE2005D00C3 /* TangramSingleAndDoubleLayout.m */,
+				4D0F41C224AF0FE2005D00C3 /* TangramDoubleColumnLayout.m */,
+				4D0F41C324AF0FE2005D00C3 /* TangramStickyLayout.m */,
+				4D0F41C424AF0FE2005D00C3 /* TangramFlowLayout.h */,
+				4D0F41C524AF0FE2005D00C3 /* TangramWaterFlowLayout.h */,
+				4D0F41C624AF0FE2005D00C3 /* TangramTetradColumnLayout.m */,
+				4D0F41C724AF0FE2005D00C3 /* TangramPageScrollLayout.h */,
+				4D0F41C824AF0FE2005D00C3 /* TangramStickyBottomLayout.h */,
+				4D0F41C924AF0FE2005D00C3 /* TangramTribleColumnLayout.m */,
+				4D0F41CA24AF0FE2005D00C3 /* TangramSingleColumnLayout.h */,
+				4D0F41CB24AF0FE2005D00C3 /* TangramFixTopLayout.h */,
+				4D0F41CC24AF0FE2005D00C3 /* TangramFixLayout.h */,
+				4D0F41CD24AF0FE2005D00C3 /* TangramScrollFlowLayout.h */,
+				4D0F41CE24AF0FE2005D00C3 /* TangramDragableLayout.h */,
+				4D0F41CF24AF0FE2005D00C3 /* TangramFixBottomLayout.m */,
+				4D0F41D024AF0FE2005D00C3 /* TangramScrollWaterFlowLayout.h */,
+				4D0F41D124AF0FE2005D00C3 /* TangramFlowLayout.m */,
+				4D0F41D224AF0FE2005D00C3 /* TangramWaterFlowLayout.m */,
+				4D0F41D324AF0FE2005D00C3 /* TangramStickyLayout.h */,
+				4D0F41D424AF0FE2005D00C3 /* TangramDoubleColumnLayout.h */,
+				4D0F41D524AF0FE2005D00C3 /* TangramQuintetColumnLayout.h */,
+				4D0F41D624AF0FE2005D00C3 /* TangramSingleAndDoubleLayout.h */,
+				4D0F41D724AF0FE2005D00C3 /* TangramFixLayout.m */,
+				4D0F41D824AF0FE2005D00C3 /* TangramFixTopLayout.m */,
+				4D0F41D924AF0FE2005D00C3 /* TangramSingleColumnLayout.m */,
+				4D0F41DA24AF0FE2005D00C3 /* TangramTribleColumnLayout.h */,
+				4D0F41DB24AF0FE2005D00C3 /* TangramStickyBottomLayout.m */,
+				4D0F41DC24AF0FE2005D00C3 /* TangramTetradColumnLayout.h */,
+				4D0F41DD24AF0FE2005D00C3 /* TangramPageScrollLayout.m */,
+				4D0F41DE24AF0FE2005D00C3 /* TangramDragableLayout.m */,
+				4D0F41DF24AF0FE2005D00C3 /* TangramScrollFlowLayout.m */,
+				4D0F41E024AF0FE2005D00C3 /* TangramScrollWaterFlowLayout.m */,
+				4D0F41E124AF0FE2005D00C3 /* TangramFixBottomLayout.h */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		4D0F41E224AF0FE2005D00C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41E324AF0FE2005D00C3 /* TangramDefaultItemModel.m */,
+				4D0F41E424AF0FE2005D00C3 /* TangramDefaultItemModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D0F41E524AF0FE2005D00C3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41E624AF0FE2005D00C3 /* TangramDefaultDataSourceHelper.m */,
+				4D0F41E724AF0FE2005D00C3 /* TangramLayoutParseHelper.m */,
+				4D0F41E824AF0FE2005D00C3 /* TangramLayoutParseHelper.h */,
+				4D0F41E924AF0FE2005D00C3 /* TangramDefaultDataSourceHelper.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4D0F41EA24AF0FE2005D00C3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41EB24AF0FE2005D00C3 /* TangramItemModelFactoryProtocol.h */,
+				4D0F41EC24AF0FE2005D00C3 /* TangramElementHeightProtocol.h */,
+				4D0F41ED24AF0FE2005D00C3 /* TangramEasyElementProtocol.h */,
+				4D0F41EE24AF0FE2005D00C3 /* TangramDefaultEventDelegate.h */,
+				4D0F41EF24AF0FE2005D00C3 /* TangramLayoutFactoryProtocol.h */,
+				4D0F41F024AF0FE2005D00C3 /* TangramElementReuseIdentifierProtocol.h */,
+				4D0F41F124AF0FE2005D00C3 /* TangramLayoutProtocol.h */,
+				4D0F41F224AF0FE2005D00C3 /* TangramScrollLayoutProtocol.h */,
+				4D0F41F324AF0FE2005D00C3 /* TangramItemModelProtocol.h */,
+				4D0F41F424AF0FE2005D00C3 /* TangramElementFactoryProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4D0F41F524AF0FE2005D00C3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41F624AF0FE2005D00C3 /* TangramDefaultElementFactory.h */,
+				4D0F41F724AF0FE2005D00C3 /* TangramDefaultItemModelFactory.m */,
+				4D0F41F824AF0FE2005D00C3 /* TangramDefaultLayoutFactory.h */,
+				4D0F41F924AF0FE2005D00C3 /* TangramDefaultElementFactory.m */,
+				4D0F41FA24AF0FE2005D00C3 /* TangramDefaultLayoutFactory.m */,
+				4D0F41FB24AF0FE2005D00C3 /* TangramDefaultItemModelFactory.h */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		4D0F41FC24AF0FE2005D00C3 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F41FD24AF0FE2005D00C3 /* TangramSingleImageElement.swift */,
+				4D0F41FE24AF0FE2005D00C3 /* TangramSimpleTextElement.swift */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		4D0F41FF24AF0FE2005D00C3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F420024AF0FE2005D00C3 /* WebP.framework */,
+				4D0F420124AF0FE2005D00C3 /* WebPSerializer.swift */,
+				4D0F420224AF0FE2005D00C3 /* CGImage+WebP.m */,
+				4D0F420324AF0FE2005D00C3 /* test.webp */,
+				4D0F420424AF0FE2005D00C3 /* WebPProcessor.swift */,
+				4D0F420524AF0FE2005D00C3 /* Image+WebP.swift */,
+				4D0F420624AF0FE2005D00C3 /* CGImage+WebP.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4D0F427324AF1ADE005D00C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F427424AF1ADE005D00C3 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D0F40F924AF0FCF005D00C3 /* NewTestDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D0F410E24AF0FD0005D00C3 /* Build configuration list for PBXNativeTarget "NewTestDemo" */;
+			buildPhases = (
+				4D0F40F624AF0FCF005D00C3 /* Sources */,
+				4D0F40F724AF0FCF005D00C3 /* Frameworks */,
+				4D0F40F824AF0FCF005D00C3 /* Resources */,
+				4D0F427824AF1B12005D00C3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewTestDemo;
+			productName = NewTestDemo;
+			productReference = 4D0F40FA24AF0FCF005D00C3 /* NewTestDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D0F40F224AF0FCF005D00C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Dataoke;
+				TargetAttributes = {
+					4D0F40F924AF0FCF005D00C3 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 4D0F40F524AF0FCF005D00C3 /* Build configuration list for PBXProject "NewTestDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D0F40F124AF0FCF005D00C3;
+			productRefGroup = 4D0F40FB24AF0FCF005D00C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D0F40F924AF0FCF005D00C3 /* NewTestDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D0F40F824AF0FCF005D00C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0F425024AF0FE2005D00C3 /* TmallComponent2.out in Resources */,
+				4D0F420B24AF0FE2005D00C3 /* TangramMock.json in Resources */,
+				4D0F424E24AF0FE2005D00C3 /* TangramKitVVElementTypeMap.plist in Resources */,
+				4D0F410A24AF0FD0005D00C3 /* LaunchScreen.storyboard in Resources */,
+				4D0F410724AF0FD0005D00C3 /* Assets.xcassets in Resources */,
+				4D0F426F24AF0FE2005D00C3 /* test.webp in Resources */,
+				4D0F424F24AF0FE2005D00C3 /* TangramLayoutTypeMap.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D0F427824AF1B12005D00C3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D0F40F624AF0FCF005D00C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0F421B24AF0FE2005D00C3 /* NSObject+VVObserver.m in Sources */,
+				4D0F423B24AF0FE2005D00C3 /* TMLazyItemModel.m in Sources */,
+				4D0F423524AF0FE2005D00C3 /* VVLayer.m in Sources */,
+				4D0F421524AF0FE2005D00C3 /* VVErrors.m in Sources */,
+				4D0F427124AF0FE2005D00C3 /* Image+WebP.swift in Sources */,
+				4D0F425924AF0FE2005D00C3 /* TangramFixBottomLayout.m in Sources */,
+				4D0F423A24AF0FE2005D00C3 /* TMLazyReusePool.m in Sources */,
+				4D0F427024AF0FE2005D00C3 /* WebPProcessor.swift in Sources */,
+				4D0F422624AF0FE2005D00C3 /* NVLineView.m in Sources */,
+				4D0F421924AF0FE2005D00C3 /* VVSystemKey.m in Sources */,
+				4D0F425D24AF0FE2005D00C3 /* TangramFixTopLayout.m in Sources */,
+				4D0F423924AF0FE2005D00C3 /* UIView+TMLazyScrollView.m in Sources */,
+				4D0F426824AF0FE2005D00C3 /* TangramDefaultElementFactory.m in Sources */,
+				4D0F424C24AF0FE2005D00C3 /* NSString+Tangram.m in Sources */,
+				4D0F425124AF0FE2005D00C3 /* TMVVBaseElement.m in Sources */,
+				4D0F424D24AF0FE2005D00C3 /* UIView+Tangram.m in Sources */,
+				4D0F425224AF0FE2005D00C3 /* VVTempleteManager.m in Sources */,
+				4D0F423324AF0FE2005D00C3 /* VVGridLayout.m in Sources */,
+				4D0F421D24AF0FE2005D00C3 /* UIColor+VirtualView.m in Sources */,
+				4D0F425524AF0FE2005D00C3 /* TangramDoubleColumnLayout.m in Sources */,
+				4D0F421724AF0FE2005D00C3 /* VVBaseNode.m in Sources */,
+				4D0F420824AF0FE2005D00C3 /* MockViewController.swift in Sources */,
+				4D0F426E24AF0FE2005D00C3 /* CGImage+WebP.m in Sources */,
+				4D0F422D24AF0FE2005D00C3 /* VVVHLayout.m in Sources */,
+				4D0F424A24AF0FE2005D00C3 /* TangramBusIndexClass.m in Sources */,
+				4D0F425F24AF0FE2005D00C3 /* TangramStickyBottomLayout.m in Sources */,
+				4D0F421624AF0FE2005D00C3 /* VVViewContainer.m in Sources */,
+				4D0F426324AF0FE2005D00C3 /* TangramScrollWaterFlowLayout.m in Sources */,
+				4D0F422E24AF0FE2005D00C3 /* NVFrameLayout.m in Sources */,
+				4D0F426124AF0FE2005D00C3 /* TangramDragableLayout.m in Sources */,
+				4D0F424124AF0FE2005D00C3 /* TangramProgressBar.m in Sources */,
+				4D0F424924AF0FE2005D00C3 /* TangramBusIndexTopic.m in Sources */,
+				4D0F424324AF0FE2005D00C3 /* TangramBusIndex.m in Sources */,
+				4D0F423124AF0FE2005D00C3 /* NVVHLayout.m in Sources */,
+				4D0F424824AF0FE2005D00C3 /* TangramAction.m in Sources */,
+				4D0F422224AF0FE2005D00C3 /* VVBinaryLoader.m in Sources */,
+				4D0F426924AF0FE2005D00C3 /* TangramDefaultLayoutFactory.m in Sources */,
+				4D0F422724AF0FE2005D00C3 /* VVGridView.m in Sources */,
+				4D0F425724AF0FE2005D00C3 /* TangramTetradColumnLayout.m in Sources */,
+				4D0F426024AF0FE2005D00C3 /* TangramPageScrollLayout.m in Sources */,
+				4D0F420724AF0FE2005D00C3 /* DTKBridgeSwift.swift in Sources */,
+				4D0F424624AF0FE2005D00C3 /* TangramEvent.m in Sources */,
+				4D0F422324AF0FE2005D00C3 /* VVTemplateBinaryLoader.m in Sources */,
+				4D0F423624AF0FE2005D00C3 /* VVLineLayer.m in Sources */,
+				4D0F426524AF0FE2005D00C3 /* TangramDefaultDataSourceHelper.m in Sources */,
+				4D0F425A24AF0FE2005D00C3 /* TangramFlowLayout.m in Sources */,
+				4D0F422424AF0FE2005D00C3 /* NVImageView.m in Sources */,
+				4D0F425324AF0FE2005D00C3 /* TangramQuintetColumnLayout.m in Sources */,
+				4D0F421124AF0FE2005D00C3 /* VVPropertyIntSetter.m in Sources */,
+				4D0F423424AF0FE2005D00C3 /* VVVH2Layout.m in Sources */,
+				4D0F423C24AF0FE2005D00C3 /* NSDictionary+TMSafeUtils.m in Sources */,
+				4D0F424B24AF0FE2005D00C3 /* TangramView.m in Sources */,
+				4D0F423D24AF0FE2005D00C3 /* NSArray+TMSafeUtils.m in Sources */,
+				4D0F425B24AF0FE2005D00C3 /* TangramWaterFlowLayout.m in Sources */,
+				4D0F421E24AF0FE2005D00C3 /* VVTemplateManager.m in Sources */,
+				4D0F40FE24AF0FCF005D00C3 /* AppDelegate.swift in Sources */,
+				4D0F426424AF0FE2005D00C3 /* TangramDefaultItemModel.m in Sources */,
+				4D0F420E24AF0FE2005D00C3 /* VVPropertyFloatSetter.m in Sources */,
+				4D0F425624AF0FE2005D00C3 /* TangramStickyLayout.m in Sources */,
+				4D0F424424AF0FE2005D00C3 /* TangramContext.m in Sources */,
+				4D0F426224AF0FE2005D00C3 /* TangramScrollFlowLayout.m in Sources */,
+				4D0F426D24AF0FE2005D00C3 /* WebPSerializer.swift in Sources */,
+				4D0F425824AF0FE2005D00C3 /* TangramTribleColumnLayout.m in Sources */,
+				4D0F422824AF0FE2005D00C3 /* VVLoopingScrollView.m in Sources */,
+				4D0F426A24AF0FE2005D00C3 /* TangramSingleImageElement.swift in Sources */,
+				4D0F423E24AF0FE2005D00C3 /* NSString+TMSafeUtils.m in Sources */,
+				4D0F425424AF0FE2005D00C3 /* TangramSingleAndDoubleLayout.m in Sources */,
+				4D0F423824AF0FE2005D00C3 /* TMLazyModelBucket.m in Sources */,
+				4D0F422C24AF0FE2005D00C3 /* NVRatioLayout.m in Sources */,
+				4D0F421024AF0FE2005D00C3 /* VVExpression.m in Sources */,
+				4D0F426624AF0FE2005D00C3 /* TangramLayoutParseHelper.m in Sources */,
+				4D0F423024AF0FE2005D00C3 /* VVLayout.m in Sources */,
+				4D0F424224AF0FE2005D00C3 /* TangramEventDispatcher.m in Sources */,
+				4D0F421A24AF0FE2005D00C3 /* VVObserver.m in Sources */,
+				4D0F425E24AF0FE2005D00C3 /* TangramSingleColumnLayout.m in Sources */,
+				4D0F420D24AF0FE2005D00C3 /* VVPropertyStringSetter.m in Sources */,
+				4D0F424024AF0FE2005D00C3 /* TangramPageControl.m in Sources */,
+				4D0F422B24AF0FE2005D00C3 /* VVFrameLayout.m in Sources */,
+				4D0F421824AF0FE2005D00C3 /* VVNodeClassMapper.m in Sources */,
+				4D0F421224AF0FE2005D00C3 /* VVNodeCreater.m in Sources */,
+				4D0F420A24AF0FE2005D00C3 /* ViewController.swift in Sources */,
+				4D0F421F24AF0FE2005D00C3 /* VVVersionModel.m in Sources */,
+				4D0F422A24AF0FE2005D00C3 /* NVVH2Layout.m in Sources */,
+				4D0F426B24AF0FE2005D00C3 /* TangramSimpleTextElement.swift in Sources */,
+				4D0F421324AF0FE2005D00C3 /* VVConfig.m in Sources */,
+				4D0F422524AF0FE2005D00C3 /* NVTextView.m in Sources */,
+				4D0F426724AF0FE2005D00C3 /* TangramDefaultItemModelFactory.m in Sources */,
+				4D0F422024AF0FE2005D00C3 /* VVViewFactory.m in Sources */,
+				4D0F420C24AF0FE2005D00C3 /* VVPropertySetter.m in Sources */,
+				4D0F423224AF0FE2005D00C3 /* NVGridLayout.m in Sources */,
+				4D0F424724AF0FE2005D00C3 /* TangramBus.m in Sources */,
+				4D0F420924AF0FE2005D00C3 /* EntryTableViewController.swift in Sources */,
+				4D0F420F24AF0FE2005D00C3 /* VVPropertyExpressionSetter.m in Sources */,
+				4D0F421C24AF0FE2005D00C3 /* UIView+VirtualView.m in Sources */,
+				4D0F422124AF0FE2005D00C3 /* VVTemplateLoader.m in Sources */,
+				4D0F422F24AF0FE2005D00C3 /* VVRatioLayout.m in Sources */,
+				4D0F421424AF0FE2005D00C3 /* VVBinaryStringMapper.m in Sources */,
+				4D0F423724AF0FE2005D00C3 /* TMLazyScrollView.m in Sources */,
+				4D0F425C24AF0FE2005D00C3 /* TangramFixLayout.m in Sources */,
+				4D0F422924AF0FE2005D00C3 /* VVPageView.m in Sources */,
+				4D0F424524AF0FE2005D00C3 /* TangramEventQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4D0F410824AF0FD0005D00C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D0F410924AF0FD0005D00C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D0F410C24AF0FD0005D00C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D0F410D24AF0FD0005D00C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D0F410F24AF0FD0005D00C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3T9TULVG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NewTestDemo",
+					"$(PROJECT_DIR)/NewTestDemo/Classes",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NewTestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CDDTK.com.NewTestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NewTestDemo/TestDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4D0F411024AF0FD0005D00C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3T9TULVG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NewTestDemo",
+					"$(PROJECT_DIR)/NewTestDemo/Classes",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NewTestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CDDTK.com.NewTestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NewTestDemo/TestDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D0F40F524AF0FCF005D00C3 /* Build configuration list for PBXProject "NewTestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0F410C24AF0FD0005D00C3 /* Debug */,
+				4D0F410D24AF0FD0005D00C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D0F410E24AF0FD0005D00C3 /* Build configuration list for PBXNativeTarget "NewTestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0F410F24AF0FD0005D00C3 /* Debug */,
+				4D0F411024AF0FD0005D00C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D0F40F224AF0FCF005D00C3 /* Project object */;
+}

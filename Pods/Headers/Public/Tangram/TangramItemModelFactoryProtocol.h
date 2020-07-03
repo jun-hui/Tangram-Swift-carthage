@@ -1,1 +1,0 @@
-../../../Tangram/Tangram/Protocols/TangramItemModelFactoryProtocol.h
